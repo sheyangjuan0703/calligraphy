@@ -1,0 +1,4 @@
+/* pages/map/map.wxss */
+map{
+  height: 100% !important
+}

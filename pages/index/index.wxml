@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class="container">
+   <view class="myCard">
+     <image class='img' src='http://r.photo.store.qq.com/psb?/V10yq96o4Pm7Kj/Z5*tlnuyzxtnQNyHQ01536QU4jY9zR7vFSrysfcYnOs!/r/dJUAAAAAAAAA'></image>
+    <view class='title'>{{title}}</view>
+     <view class='des'>{{des}}</view> 
+  </view> 
+  <view class="myInfo">
+    <view class='info_li' bindtap="goMap">
+      <view class='info_li_text'>
+        <image class='icon icon_location' src='../../static/location.png'></image>
+        <text>{{address}}</text>
+        <image class='icon icon_arrow' src='../../static/arrow.png'></image>
+      </view>
+    </view>
+    <view class='info_li'>
+      <view class='info_li_text'>
+        <image class='icon icon_qq' src='../../static/QQ.png'></image>
+        <text selectable='true' >{{qq}}</text>
+      </view>
+    </view>
+    <view class='info_li' bindtap="goCall">
+      <view class='info_li_text'>
+        <image class='icon icon_phone' src='../../static/phone.png'></image>
+        <text selectable='true'>{{phone}}</text>
+        <image class='icon icon_arrow' src='../../static/arrow.png'></image>
+      </view>
+    </view>
+    <view class='info_li'>
+      <view class='info_li_text'>
+        <image class='icon icon_phone' src='../../static/image.png'></image>
+        <text>书法</text>
+      </view>
+      <scroll-view class="scroll-view_H" scroll-x="true" >
+        <view class="scroll-view-item_H" wx:for="{{couplet}}" wx:key="unique">
+          <view><image class='img' src='{{item}}' lazy-load="true" bindtap="goBigImg" data-item='{{item}}'></image></view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class='info_li'>
+      <view class='info_li_text'>
+        <image class='icon icon_phone' src='../../static/image.png'></image>
+        <text>对联</text>
+      </view>
+      <scroll-view class="scroll-view_H" scroll-x="true" >
+        <view class="scroll-view-item_H" wx:for="{{calligraphy}}" wx:key="unique">
+          <view><image class='img' mode="aspectFill" src='{{item}}' lazy-load="true"  bindtap="goBigImg" data-item='{{item}}'></image></view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

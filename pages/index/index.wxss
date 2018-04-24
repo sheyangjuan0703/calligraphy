@@ -1,0 +1,89 @@
+/**index.wxss**/
+.myCard{
+  position: relative;
+  padding: 0 80px 10px 10px
+}
+ .myCard::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  right: 0;
+  width: calc(100% - 10px);
+  height: 1px;
+  border-top: 1px dashed #ccc
+} 
+  .myCard .img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+   position: absolute; 
+  display: block;
+  top: 50%;
+   margin-top: -30px; 
+  right: 10px
+}  
+.title{
+  color: #333;
+  font-size: 18px;
+  margin: 5px 0;
+}
+.des{
+  color: #ccc;
+  font-size: 12px;
+}
+.myInfo{
+  padding:5px 0
+}
+.myInfo .info_li_text{
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+.myInfo .icon{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px
+}
+.myInfo text{
+  flex: 1
+}
+.myInfo view{
+  color: #333;
+  font-size: 14px;
+}
+.section{
+  width: 100%
+}
+.scroll-view_H{
+  height:178px;
+  white-space: nowrap;
+}
+.scroll-view-item_H{
+  width: 129px; 
+  height: 176px; 
+  display: inline-block;
+  padding:0 5px
+} 
+.scroll-view-item_H view{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background:#ddd;
+} 
+.scroll-view-item_H:first-child{
+  margin-left: 5px;
+}
+.scroll-view-item_H:last-child{
+  margin-right: 5px;
+}
+ .scroll-view-item {
+  height: 200px
+} 
+.img{
+  max-width: 100%;
+  max-height: 100%;
+}
